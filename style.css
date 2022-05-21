@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(9, 8, 24);
+    border: 1px solid white;
+}
+
+@keyframes slide {
+    from {
+        background-position: 4500%;
+    }
+    to {
+        background-position: 0%;
+    }
+}
+
+#background {
+    /* bottom: 0px; */
+    width: 100%;
+    height: 300px;
+    /* position: absolute; */
+    position: relative;
+    background-color: #2a0a40;
+    background-image: url('./assets/background.png');
+    background-repeat: repeat-x;
+    animation: slide 600s infinite linear;
+    -webkit-animation: slide 600s infinite linear;
+}
+
+.obstacle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0px;
+    background-image: url('./assets/obstacle.png');
+}
+
+#player {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0px;
+    background-image: url('./assets/player.png');
+}
+
+.jump {
+    background-image: url('./assets/player-jump.png') !important;
+}
+
+#game-over {
+    color: white;
+    text-align: center;
+}
